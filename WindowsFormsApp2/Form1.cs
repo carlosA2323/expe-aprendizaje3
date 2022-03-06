@@ -23,7 +23,7 @@ namespace WindowsFormsApp2
         }
         
         string[] usernames = { "user1", "user2", "user3", "user4", "user5" };
-        string[] passwords = { "user1", "user2", "user3", "user4", "user5" };
+        string[] passwords = { "pass1", "pass2", "pass3", "pass4", "pass5" };
         private void button1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i <= usernames.Length; i++)
