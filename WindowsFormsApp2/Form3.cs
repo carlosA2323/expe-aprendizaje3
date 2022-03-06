@@ -32,7 +32,7 @@ namespace WindowsFormsApp2
         private void Form3_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            timer1.Interval = 1500;
+            timer1.Interval = 15000;
             timer1.Start();
         }
     }

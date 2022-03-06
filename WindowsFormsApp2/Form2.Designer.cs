@@ -52,8 +52,8 @@
             this.richTextBox10 = new System.Windows.Forms.RichTextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.richTextBox11 = new System.Windows.Forms.RichTextBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,6 +81,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.Silver;
             this.tabPage1.Controls.Add(this.richTextBox2);
             this.tabPage1.Controls.Add(this.richTextBox1);
             this.tabPage1.Controls.Add(this.pictureBox1);
@@ -90,7 +91,6 @@
             this.tabPage1.Size = new System.Drawing.Size(785, 425);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Categoría 1 Huracanes";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // richTextBox2
             // 
@@ -122,6 +122,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.Azure;
             this.tabPage2.Controls.Add(this.richTextBox7);
             this.tabPage2.Controls.Add(this.richTextBox8);
             this.tabPage2.Controls.Add(this.pictureBox4);
@@ -134,7 +135,6 @@
             this.tabPage2.Size = new System.Drawing.Size(785, 425);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Categoría 2-3 Huracanes";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // richTextBox7
             // 
@@ -192,6 +192,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.LightBlue;
             this.tabPage3.Controls.Add(this.richTextBox5);
             this.tabPage3.Controls.Add(this.richTextBox6);
             this.tabPage3.Controls.Add(this.pictureBox3);
@@ -203,7 +204,6 @@
             this.tabPage3.Size = new System.Drawing.Size(785, 425);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Categoría 4-5 Huracanes";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // richTextBox5
             // 
@@ -259,6 +259,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabPage4.Controls.Add(this.richTextBox11);
             this.tabPage4.Controls.Add(this.chart1);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -266,7 +267,16 @@
             this.tabPage4.Size = new System.Drawing.Size(785, 425);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Pequeñas + Grandes Categorías";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox11
+            // 
+            this.richTextBox11.Location = new System.Drawing.Point(224, 9);
+            this.richTextBox11.Name = "richTextBox11";
+            this.richTextBox11.Size = new System.Drawing.Size(256, 62);
+            this.richTextBox11.TabIndex = 1;
+            this.richTextBox11.Text = "Huracanes por Categorias Historicas 2021:\nC1,C2,C3,C4,C5 = Categoria + Nivel \nTT " +
+    "=Tormenta Tropical\nTS = Depresión Tropical";
+            this.richTextBox11.TextChanged += new System.EventHandler(this.richTextBox11_TextChanged);
             // 
             // chart1
             // 
@@ -285,16 +295,6 @@
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
-            // richTextBox11
-            // 
-            this.richTextBox11.Location = new System.Drawing.Point(224, 9);
-            this.richTextBox11.Name = "richTextBox11";
-            this.richTextBox11.Size = new System.Drawing.Size(256, 62);
-            this.richTextBox11.TabIndex = 1;
-            this.richTextBox11.Text = "Huracanes por Categorias Historicas 2021:\nC1,C2,C3,C4,C5 = Categoria + Nivel \nTT " +
-    "=Tormenta Tropical\nTS = Depresión Tropical";
-            this.richTextBox11.TextChanged += new System.EventHandler(this.richTextBox11_TextChanged);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,7 +302,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Huracanes";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
